@@ -32,7 +32,7 @@ ul {
 .img-main {
   display: block;
 }
-
+/* TOP_LINE */
 /* LOGO-STUDIO */
 .logo {
   margin-right: 76px;
@@ -95,9 +95,7 @@ ul {
   font-style: normal;
   gap: 40px;
 }
-.addres-auth .auth-item + .auth-item {
-  margin-left: 40px;
-}
+
 .aut-item-link {
   color: var(--acent-auth-color);
   size: 12px;
@@ -111,6 +109,14 @@ ul {
 .aut-item-link:hover,
 .aut-item-link:focus {
   color: var(--acent-focus-color);
+}
+.header-container {
+  display: flex;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Hero */
@@ -190,7 +196,7 @@ ul {
 }
 /* OUR TEAM SECT 4*/
 .our-team {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .team-name {
   padding: 32px 16px;
@@ -257,6 +263,7 @@ ul {
 /* PORTFOLIO_main */
 .app-servis-buy {
   display: flex;
+  flex-wrap: wrap;
 
   column-gap: 24px;
   row-gap: 48px;
@@ -273,7 +280,9 @@ ul {
   padding: 100px 0;
   background-color: #2e2f42;
 }
-.logo-studio.footer {
+.logo .logo-studio.footer {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #f4f4fd;
 }
 
@@ -326,9 +335,4 @@ ul {
 
 .link {
   text-decoration: none;
-}
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
